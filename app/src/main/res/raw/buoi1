@@ -1,0 +1,25 @@
+1. Có 2 chế độ hiện thị là Android và Project
+    - Chế độ Android: hiện thị file, thư mục cần thiết để code
+    - Chế độ Project: hiện thị all
+2. Android Manifest: chứa setting các màn hình, service và các quyền
+    - res -> drawable: thư mục các ảnh, vector
+    - layout: chứa file xml của các giao diện (màn hình, view, dialog)
+        + layout cho màn hình dọc và ngang
+    - values:
+        + color (chứa các mã màu)
+        + string (lưa các string cho các đa ngôn ngữ
+        tiện lợi cho việc maintain và test)
+        + dimen: lưu giữ các kích thước
+3. LinearLayout:
+    - vertical: xếp theo hàng dọc
+    - horizontal: ngang
+
+    - TextView: chỉ hiện thị text
+    - Button: sự kiện click
+    - 2 file cần quan tâm:
+        + file xử lý logic: MainActivity.java
+        + file giao diện: activity_main.xml
+        --> để 2 file liên kết với nhau thì mỗi phần giao diện cần gắn <id> (tên duy nhất trong file giao diện)
+4. Xem các lỗi ở logcat
+    - Verbose: hiện thị tất cả các log
+    - Error: hiện thị các log lỗi
